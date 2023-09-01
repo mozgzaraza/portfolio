@@ -1,8 +1,7 @@
 const popupLinks = document.querySelectorAll(".popup-link");
 
-for (let index = 0; index < popupLinks.length; index++) {
-  const popupLink = popupLinks[index];
-  popupLink.addEventListener("click", function (e) {
-    console.log("Клик " + (index + 1));
+popupLinks.forEach(function (value, key) {
+  value.addEventListener("click", function (e) {
+    console.log("Клик " + (key + 1));
   });
-}
+});
